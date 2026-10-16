@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cardoza.Dev — About</title>
-  <meta name="description" content="Sobre mí — José Enmanuel Cardoza — Ingeniería Computacional, Ciberseguridad, Dev Freelance." />
+  <title>Cardoza.Dev — About &amp; CV</title>
+  <meta name="description" content="José Enmanuel Cardoza Ferrer — Especialista en Infraestructura TI, Ciberseguridad (GRC/SGSI) y Desarrollador Full-Stack." />
   <link rel="icon" type="image/png" href="Inspiracion/favicon.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -55,7 +55,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; }
 
@@ -183,7 +183,7 @@
     /* ── Section label ── */
     .section-label {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.7rem;
+      font-size: 0.72rem;
       letter-spacing: 0.25em;
       text-transform: uppercase;
       color: var(--cyan);
@@ -192,7 +192,7 @@
     /* ── Nav link ── */
     .nav-link {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.76rem;
+      font-size: 0.78rem;
       color: #7878a0;
       transition: color 0.2s;
       position: relative;
@@ -211,7 +211,7 @@
     /* ── Buttons ── */
     .btn-primary {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 11px 28px;
+      padding: 11px 26px;
       background: linear-gradient(135deg, var(--green) 0%, var(--cyan) 100%);
       color: #000;
       font-family: 'JetBrains Mono', monospace;
@@ -232,13 +232,13 @@
 
     .btn-outline {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 10px 28px;
+      padding: 10px 24px;
       background: transparent;
-      color: var(--magenta);
+      color: var(--cyan);
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.8rem; font-weight: 500;
       border-radius: 4px;
-      border: 1px solid rgba(255,0,200,0.4);
+      border: 1px solid rgba(0,255,240,0.35);
       cursor: pointer;
       transition: all 0.25s ease;
       text-decoration: none;
@@ -246,28 +246,28 @@
       clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
     }
     .btn-outline:hover {
-      background: rgba(255,0,200,0.08);
-      border-color: var(--magenta);
-      box-shadow: 0 0 20px rgba(255,0,200,0.3);
-      color: #ff66e0;
+      background: rgba(0,255,240,0.08);
+      border-color: var(--cyan);
+      box-shadow: 0 0 20px rgba(0,255,240,0.25);
+      color: #ffffff;
       transform: translateY(-2px);
     }
 
     /* ── Tag badge ── */
     .tag {
       display: inline-flex; align-items: center; gap: 6px;
-      padding: 5px 13px;
+      padding: 4px 11px;
       border-radius: 3px;
-      background: rgba(0,255,240,0.05);
-      border: 1px solid rgba(0,255,240,0.15);
+      background: rgba(0,255,240,0.04);
+      border: 1px solid rgba(0,255,240,0.12);
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.76rem; color: #9090b8;
+      font-size: 0.74rem; color: #9090b8;
       transition: all 0.2s ease;
       cursor: default;
     }
     .tag:hover {
-      background: rgba(0,255,135,0.1);
-      border-color: rgba(0,255,135,0.5);
+      background: rgba(0,255,135,0.08);
+      border-color: rgba(0,255,135,0.45);
       color: var(--green);
       box-shadow: 0 0 10px rgba(0,255,135,0.15);
     }
@@ -277,10 +277,10 @@
       background: #0c0c18;
       border: 1px solid #1a1a2e;
       border-radius: 6px;
-      padding: 24px;
+      padding: 22px;
       position: relative;
       overflow: hidden;
-      transition: border-color 0.25s, box-shadow 0.25s;
+      transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
     }
     .stack-card::before {
       content: '';
@@ -290,12 +290,38 @@
       background: linear-gradient(180deg, var(--green), var(--cyan));
       transition: height 0.3s ease;
     }
-    .stack-card:hover { border-color: rgba(0,255,240,0.2); box-shadow: 0 0 20px rgba(0,255,240,0.05); }
+    .stack-card:hover {
+      border-color: rgba(0,255,240,0.25);
+      box-shadow: 0 0 24px rgba(0,255,240,0.06);
+      transform: translateY(-2px);
+    }
     .stack-card:hover::before { height: 100%; }
+
+    /* ── HUD Telemetry Stats ── */
+    .hud-stat {
+      background: #0c0c18;
+      border: 1px solid #1a1a2e;
+      border-radius: 6px;
+      padding: 18px 20px;
+      position: relative;
+      transition: border-color 0.25s, box-shadow 0.25s, transform 0.2s;
+    }
+    .hud-stat:hover {
+      border-color: rgba(0,255,135,0.3);
+      box-shadow: 0 0 20px rgba(0,255,135,0.08);
+      transform: translateY(-2px);
+    }
+    .hud-stat::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 10px; height: 2px;
+      background: var(--green);
+    }
 
     /* ── Icon box ── */
     .icon-box {
-      width: 40px; height: 40px;
+      width: 42px; height: 42px;
       border-radius: 6px;
       display: flex; align-items: center; justify-content: center;
       background: rgba(0,255,135,0.07);
@@ -320,7 +346,7 @@
     /* ── Language switcher btn ── */
     .lang-btn {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.7rem;
+      font-size: 0.72rem;
       font-weight: 700;
       letter-spacing: 0.12em;
       padding: 5px 14px;
@@ -351,21 +377,21 @@
     .timeline-item::after {
       content: '';
       position: absolute;
-      left: 3px; top: 18px;
+      left: 3px; top: 20px;
       width: 2px;
-      height: calc(100% + 16px);
-      background: linear-gradient(180deg, rgba(0,255,135,0.3), transparent);
+      height: calc(100% + 14px);
+      background: linear-gradient(180deg, rgba(0,255,135,0.35), rgba(0,255,240,0.05));
     }
     .timeline-item:last-child::after { display: none; }
 
     /* ── Cert badge ── */
     .cert-badge {
-      display: flex; align-items: flex-start; gap: 11px;
-      padding: 14px 16px;
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 18px;
       background: #0c0c18;
       border: 1px solid #1a1a2e;
       border-radius: 6px;
-      transition: border-color 0.2s, box-shadow 0.2s;
+      transition: border-color 0.25s, box-shadow 0.25s, transform 0.2s;
       position: relative;
       overflow: hidden;
     }
@@ -375,27 +401,31 @@
       top: 0; left: 0;
       width: 2px; height: 100%;
       background: var(--green);
-      opacity: 0.5;
+      opacity: 0.6;
     }
-    .cert-badge:hover { border-color: rgba(0,255,135,0.3); box-shadow: 0 0 20px rgba(0,255,135,0.06); }
+    .cert-badge:hover {
+      border-color: rgba(0,255,135,0.35);
+      box-shadow: 0 0 22px rgba(0,255,135,0.08);
+      transform: translateY(-2px);
+    }
 
     /* ── Lang badge ── */
     .lang-badge {
-      padding: 8px 18px;
-      border-radius: 4px;
+      padding: 10px 20px;
+      border-radius: 5px;
       background: #0c0c18;
       border: 1px solid #1a1a2e;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       color: #9090b8;
       transition: all 0.2s;
     }
-    .lang-badge:hover { border-color: rgba(0,255,240,0.25); color: var(--cyan); }
+    .lang-badge:hover { border-color: rgba(0,255,240,0.3); color: var(--cyan); }
 
     /* ── Contact btn ── */
     .btn-contact {
       display: inline-flex; align-items: center; gap: 10px;
-      padding: 14px 40px;
+      padding: 13px 36px;
       background: linear-gradient(135deg, var(--green) 0%, var(--cyan) 100%);
       color: #000;
       font-family: 'JetBrains Mono', monospace;
@@ -414,7 +444,7 @@
     }
 
     @media (max-width: 640px) {
-      .hero-name { font-size: clamp(2.4rem, 13vw, 3.6rem) !important; }
+      .hero-name { font-size: clamp(2.4rem, 12vw, 3.8rem) !important; }
     }
   </style>
 </head>
@@ -425,15 +455,15 @@
 
   <!-- ══════════════════════════════════════════════ HEADER ══ -->
   <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300"
-          style="background:rgba(8,8,16,0.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(0,255,240,0.07);">
+          style="background:rgba(8,8,16,0.85);backdrop-filter:blur(18px);border-bottom:1px solid rgba(0,255,240,0.07);">
     <nav class="max-w-6xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
 
       <!-- Brand -->
-      <a href="https://enmanuel.tech" class="font-mono font-bold tracking-widest flex items-center gap-1 text-sm">
+      <a href="https://enmanuel.tech" class="font-mono font-bold tracking-widest flex items-center gap-1 text-sm group">
         <span style="color:#44445a">[</span>
-        <span class="neon-green">Cardoza</span>
+        <span class="neon-green group-hover:brightness-125 transition-all">Cardoza</span>
         <span style="color:#44445a">.</span>
-        <span class="neon-cyan">Dev</span>
+        <span class="neon-cyan group-hover:brightness-125 transition-all">Dev</span>
         <span class="animate-blink" style="color:#00ff87">_</span>
         <span style="color:#44445a">]</span>
       </a>
@@ -442,8 +472,8 @@
       <div class="hidden sm:flex items-center gap-7">
         <a href="#bio" class="nav-link" data-i18n="nav_bio">bio</a>
         <a href="#experiencia" class="nav-link" data-i18n="nav_exp">experiencia</a>
-        <a href="#stack" class="nav-link" data-i18n="nav_stack">stack</a>
         <a href="#certificaciones" class="nav-link" data-i18n="nav_certs">certificaciones</a>
+        <a href="#stack" class="nav-link" data-i18n="nav_stack">stack</a>
         <button id="lang-toggle" class="lang-btn" onclick="toggleLang()">EN</button>
       </div>
 
@@ -466,127 +496,261 @@
          style="background:rgba(8,8,16,0.98);border-top:1px solid rgba(0,255,240,0.06);">
       <a href="#bio" class="nav-link text-sm" data-i18n="nav_bio" onclick="closeMobileMenu()">bio</a>
       <a href="#experiencia" class="nav-link text-sm" data-i18n="nav_exp" onclick="closeMobileMenu()">experiencia</a>
-      <a href="#stack" class="nav-link text-sm" data-i18n="nav_stack" onclick="closeMobileMenu()">stack</a>
       <a href="#certificaciones" class="nav-link text-sm" data-i18n="nav_certs" onclick="closeMobileMenu()">certificaciones</a>
+      <a href="#stack" class="nav-link text-sm" data-i18n="nav_stack" onclick="closeMobileMenu()">stack</a>
     </div>
   </header>
 
   <main>
 
-    <!-- ═══════════════════════════════════════════════ BIO ══ -->
-    <section id="bio" class="min-h-screen flex items-center relative pt-14 overflow-hidden">
+    <!-- ═══════════════════════════════════════════════ BIO HERO ══ -->
+    <section id="bio" class="min-h-screen flex flex-col justify-center relative pt-20 pb-16 overflow-hidden">
 
-      <canvas id="particles" class="absolute inset-0 pointer-events-none" style="opacity:0.5;"></canvas>
+      <canvas id="particles" class="absolute inset-0 pointer-events-none" style="opacity:0.45;"></canvas>
 
       <!-- Glow blobs -->
-      <div class="absolute pointer-events-none" style="top:-8%;left:-4%;width:650px;height:650px;background:radial-gradient(circle,rgba(0,255,135,0.05) 0%,transparent 65%);filter:blur(70px);"></div>
+      <div class="absolute pointer-events-none" style="top:-8%;left:-4%;width:650px;height:650px;background:radial-gradient(circle,rgba(0,255,135,0.06) 0%,transparent 65%);filter:blur(70px);"></div>
       <div class="absolute pointer-events-none" style="bottom:-10%;right:-4%;width:550px;height:550px;background:radial-gradient(circle,rgba(255,0,200,0.05) 0%,transparent 65%);filter:blur(70px);"></div>
 
-      <div class="max-w-6xl mx-auto px-5 sm:px-8 py-28 w-full relative z-10">
+      <div class="max-w-6xl mx-auto px-5 sm:px-8 w-full relative z-10 pt-10">
 
-        <!-- Prompt -->
-        <p class="section-label mb-4"><span style="color:#44445a">$</span> <span data-i18n="bio_cmd">cat profile.txt</span></p>
+        <!-- Prompt Terminal Status -->
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <p class="section-label"><span style="color:#44445a">$</span> <span data-i18n="bio_cmd">cat profile.txt</span></p>
+          <span class="hidden sm:inline font-mono text-xs" style="color:#2a2a40">|</span>
+          <span class="inline-flex items-center gap-1.5 font-mono text-xs px-2.5 py-0.5 rounded" style="background:rgba(0,255,135,0.08);border:1px solid rgba(0,255,135,0.2);color:#00ff87;">
+            <span class="w-1.5 h-1.5 rounded-full animate-pulse-slow" style="background:#00ff87;"></span>
+            <span data-i18n="bio_status">Sistemas &amp; Ciberseguridad</span>
+          </span>
+        </div>
 
         <!-- Name with glitch -->
-        <h1 class="hero-name font-mono font-bold leading-none mb-6"
-            style="font-size:clamp(3rem,8vw,6rem);letter-spacing:-0.02em;">
-          <span style="color:#eeeeff;">José </span><span class="glitch" data-text="Cardoza">Cardoza</span>
+        <h1 class="hero-name font-mono font-bold leading-none mb-3"
+            style="font-size:clamp(2.8rem,7.5vw,5.5rem);letter-spacing:-0.02em;">
+          <span style="color:#eeeeff;">José </span><span class="glitch" data-text="Cardoza Ferrer">Cardoza Ferrer</span>
         </h1>
 
-        <!-- Bio text -->
-        <p class="max-w-2xl leading-relaxed mb-10" style="color:#7878a0;font-size:1rem;">
+        <!-- Subtitle Role -->
+        <p class="font-mono text-sm sm:text-base mb-6" style="color:#00fff0;">
+          <span style="color:#44445a">&gt; </span><span data-i18n="bio_role">Especialista en Infraestructura TI · Soporte L1/L2 · Ciberseguridad (GRC/SGSI)</span>
+        </p>
+
+        <!-- Bio text from CV -->
+        <p class="max-w-3xl leading-relaxed mb-8 text-sm sm:text-base" style="color:#9090b8;">
           <span data-i18n="bio_text">
-            Próximo a titularme en <span style="color:#eeeeff;">Ingeniería Computacional</span>. Mi experiencia combina el 
-            <span class="neon-cyan">soporte corporativo</span> en infraestructuras de telecomunicaciones con el 
-            <span class="neon-green">desarrollo web freelance</span> de sistemas POS y gestores a medida. 
-            Me destaco por mi enfoque analítico para resolver problemas complejos y optimizar procesos mediante tecnología.
+            Especialista en Infraestructura de TI, Soporte Técnico L1/L2 y Ciberseguridad (GRC / SGSI) con más de 6 años de experiencia en administración de sistemas Windows/Linux, redes Cisco y soluciones cloud en Microsoft Azure. Creador de <span class="neon-cyan">SisvenPOS</span>, plataforma operativa en producción comercial con arquitectura segura, controles RBAC y Row Level Security (RLS) en Supabase. Auditor Interno certificado ISO/IEC 27001 e ISO 22301 por TÜV NORD. Orientado al soporte presencial y remoto, resolución rápida de incidencias (Troubleshooting), automatización con Python/PowerShell y Hardening de sistemas operativos.
           </span>
         </p>
 
+        <!-- Quick Terminal Metadata Badges -->
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mb-8 text-xs font-mono" style="color:#7878a0;">
+          <div class="flex items-center gap-1.5">
+            <svg width="14" height="14" fill="none" stroke="#00ff87" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="bio_loc">Trujillo, Venezuela</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <svg width="14" height="14" fill="none" stroke="#00fff0" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+58 426 240 3275</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <svg width="14" height="14" fill="none" stroke="#ff00c8" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span data-i18n="bio_availability">Disponibilidad Inmediata · Remoto / Presencial</span>
+          </div>
+        </div>
+
         <!-- CTAs -->
-        <div class="flex flex-wrap gap-4">
-          <a href="cv.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">
+        <div class="flex flex-wrap items-center gap-4 mb-14">
+          <a href="cv.pdf" download="CV_Jose_Cardoza.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-            <span data-i18n="bio_cta1">Descargar CV_</span>
+            <span data-i18n="bio_cta1">Descargar CV_ (PDF)</span>
           </a>
           <a href="#footer" class="btn-outline">
             <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             <span data-i18n="bio_cta2">Contactar</span>
           </a>
+          <a href="https://enmanuel.tech" target="_blank" rel="noopener noreferrer" class="font-mono text-xs flex items-center gap-1 text-ts hover:text-cyan transition-colors ml-1">
+            <span>enmanuel.tech</span>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
         </div>
 
-        <!-- Scroll hint -->
-        <div class="mt-20 flex items-center gap-3">
-          <div class="h-px max-w-xs flex-1" style="background:linear-gradient(90deg,transparent,rgba(0,255,240,0.2))"></div>
-          <span class="font-mono text-xs" style="color:#44445a">scroll</span>
-          <svg class="animate-bounce" width="13" height="13" fill="none" stroke="#00ff87" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        <!-- Telemetry HUD Stats Grid (from CV) -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-2">
+          
+          <div class="hud-stat">
+            <span class="font-mono text-xs uppercase tracking-widest block mb-1" style="color:#44445a;">SYS_TELEMETRY</span>
+            <div class="font-mono text-2xl sm:text-3xl font-bold neon-green">6+ <span class="text-xs font-normal text-ts">años</span></div>
+            <p class="text-xs mt-1" style="color:#7878a0;" data-i18n="stat_exp">Infraestructura TI &amp; Soporte</p>
+          </div>
+
+          <div class="hud-stat">
+            <span class="font-mono text-xs uppercase tracking-widest block mb-1" style="color:#44445a;">PROD_SOFTWARE</span>
+            <div class="font-mono text-2xl sm:text-3xl font-bold neon-cyan">9 <span class="text-xs font-normal text-ts">tiendas</span></div>
+            <p class="text-xs mt-1" style="color:#7878a0;" data-i18n="stat_sisven">SisvenPOS activo en producción</p>
+          </div>
+
+          <div class="hud-stat">
+            <span class="font-mono text-xs uppercase tracking-widest block mb-1" style="color:#44445a;">HELP_DESK</span>
+            <div class="font-mono text-2xl sm:text-3xl font-bold text-white">200+ <span class="text-xs font-normal text-ts">casos</span></div>
+            <p class="text-xs mt-1" style="color:#7878a0;" data-i18n="stat_support">Clientes L1/L2 atendidos</p>
+          </div>
+
+          <div class="hud-stat">
+            <span class="font-mono text-xs uppercase tracking-widest block mb-1" style="color:#44445a;">AUDIT_GRC</span>
+            <div class="font-mono text-2xl sm:text-3xl font-bold neon-mag">2x <span class="text-xs font-normal text-ts">ISO</span></div>
+            <p class="text-xs mt-1" style="color:#7878a0;" data-i18n="stat_iso">Auditor TÜV NORD (27001/22301)</p>
+          </div>
+
         </div>
 
       </div>
     </section>
 
-    <!-- ════════════════════════════ EDUCACIÓN / EXPERIENCIA ══ -->
+    <!-- ════════════════════════════ EXPERIENCIA Y EDUCACIÓN ══ -->
     <section id="experiencia" class="py-24" style="border-top:1px solid rgba(0,255,240,0.07);">
       <div class="max-w-6xl mx-auto px-5 sm:px-8">
 
         <div class="reveal mb-14">
           <p class="section-label mb-3"><span style="color:#44445a">$</span> <span data-i18n="edu_cmd">cat curriculum.json</span></p>
           <h2 class="text-3xl sm:text-4xl font-bold" style="color:#eeeeff;">
-            <span data-i18n="edu_title">Educación &amp;</span>
-            <span class="neon-cyan"> <span data-i18n="edu_title2">Experiencia</span></span>
+            <span data-i18n="exp_title">Experiencia Profesional &amp;</span>
+            <span class="neon-cyan"> <span data-i18n="edu_title">Educación</span></span>
           </h2>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
 
-          <!-- EDUCACIÓN -->
-          <div class="reveal" style="transition-delay:0.05s;">
-            <h3 class="font-mono text-xs uppercase tracking-widest mb-6" style="color:#44445a;">
-              <span style="color:#00ff87">▸</span> <span data-i18n="edu_section">Educación</span>
+          <!-- EXPERIENCIA PROFESIONAL (Columna Principal - 7 cols) -->
+          <div class="lg:col-span-7 reveal" style="transition-delay:0.05s;">
+            <h3 class="font-mono text-xs uppercase tracking-widest mb-8 flex items-center gap-2" style="color:#44445a;">
+              <span style="color:#00fff0">▸</span> <span class="text-white font-semibold" data-i18n="exp_section">Trayectoria Laboral</span>
             </h3>
-            <div class="flex flex-col gap-7">
 
+            <div class="flex flex-col gap-9">
+
+              <!-- SisvenPOS -->
               <div class="timeline-item">
-                <p class="font-mono text-xs mb-1" style="color:#44445a;">2022 – 2026</p>
-                <h4 class="font-semibold mb-1" style="color:#eeeeff;" data-i18n="edu1_title">Ingeniería Computacional</h4>
-                <p class="text-sm" style="color:#7878a0;">Universidad Valle del Momboy</p>
-                <p class="font-mono text-xs mt-1" style="color:#44445a;" data-i18n="edu1_status">Próximo a titularme · 2026</p>
+                <div class="flex flex-wrap items-center justify-between gap-1 mb-1">
+                  <h4 class="font-semibold text-base" style="color:#eeeeff;" data-i18n="exp_sisven_title">Fundador y Desarrollador Principal — SisvenPOS</h4>
+                  <span class="font-mono text-xs px-2 py-0.5 rounded" style="background:rgba(0,255,135,0.08);color:#00ff87;">Feb 2025 – <span data-i18n="present">Presente</span></span>
+                </div>
+                <p class="text-xs font-mono mb-3" style="color:#00fff0;">SisvenPOS (Proyecto de Software en Producción | www.enmanuel.tech)</p>
+                <ul class="space-y-2 text-xs leading-relaxed" style="color:#9090b8;">
+                  <li class="flex items-start gap-2">
+                    <span style="color:#00ff87;">›</span>
+                    <span data-i18n="exp_sisven_b1">Diseñé, desarrollé y desplegué SisvenPOS, un sistema POS con gestión de inventario y facturación operando activamente en 9 comercios locales.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span style="color:#00ff87;">›</span>
+                    <span data-i18n="exp_sisven_b2">Implementé controles de acceso basados en roles (RBAC) y políticas RLS (Row Level Security) en Supabase, aislando datos comerciales por tienda y previniendo accesos no autorizados.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span style="color:#00ff87;">›</span>
+                    <span data-i18n="exp_sisven_b3">Optimicé consultas e índices en PostgreSQL/Supabase, reduciendo el tiempo de respuesta transaccional en la generación de reportes e inventarios.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span style="color:#00ff87;">›</span>
+                    <span data-i18n="exp_sisven_b4">Capacité presencialmente a propietarios y cajeros en la operación del punto de venta y gestión de caja, logrando autonomía operativa desde el primer día.</span>
+                  </li>
+                </ul>
               </div>
 
+              <!-- Soporte e Infraestructura IT Autónomo -->
               <div class="timeline-item">
-                <p class="font-mono text-xs mb-1" style="color:#44445a;">2024 – 2025</p>
-                <h4 class="font-semibold mb-1" style="color:#eeeeff;" data-i18n="edu2_title">Ciberseguridad</h4>
-                <p class="text-sm" style="color:#7878a0;">CEUPE — Centro Europeo de Postgrado</p>
-                <p class="font-mono text-xs mt-1" style="color:#00ff87;" data-i18n="edu2_status">Completado · 2025</p>
+                <div class="flex flex-wrap items-center justify-between gap-1 mb-1">
+                  <h4 class="font-semibold text-base" style="color:#eeeeff;" data-i18n="exp_soporte_title">Técnico de Soporte e Infraestructura IT (Autónomo)</h4>
+                  <span class="font-mono text-xs px-2 py-0.5 rounded" style="background:rgba(0,255,240,0.08);color:#00fff0;">Mayo 2018 – <span data-i18n="present">Presente</span></span>
+                </div>
+                <p class="text-xs font-mono mb-3" style="color:#7878a0;">Servicios Profesionales de TI · Trujillo, Venezuela</p>
+                <ul class="space-y-2 text-xs leading-relaxed" style="color:#9090b8;">
+                  <li class="flex items-start gap-2">
+                    <span style="color:#00fff0;">›</span>
+                    <span data-i18n="exp_soporte_b1">Resolví incidencias L1/L2 de hardware, software y red para más de 200 clientes particulares y comerciales mediante soporte presencial y remoto (AnyDesk, TeamViewer, RDP).</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span style="color:#00fff0;">›</span>
+                    <span data-i18n="exp_soporte_b2">Instalé y aseguré sistemas Windows (Desktop/Server) y Linux (Ubuntu/Debian) mediante hardening, cuentas de mínimo privilegio, políticas GPO y respaldos periódicos de datos.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span style="color:#00fff0;">›</span>
+                    <span data-i18n="exp_soporte_b3">Configuré dispositivos de red Cisco (switches/routers), topologías LAN/WLAN y servicios esenciales (TCP/IP, DHCP, DNS, VPN), asegurando alta disponibilidad de conectividad.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Networx Solutions -->
+              <div class="timeline-item">
+                <div class="flex flex-wrap items-center justify-between gap-1 mb-1">
+                  <h4 class="font-semibold text-base" style="color:#eeeeff;" data-i18n="exp_networx_title">Asistente Técnico de TI y Soporte Operativo</h4>
+                  <span class="font-mono text-xs" style="color:#44445a;">Ene 2026 – Mar 2026</span>
+                </div>
+                <p class="text-xs font-mono mb-3" style="color:#7878a0;">Networx Solutions C.A. · El Vigía / Cuicas, Venezuela</p>
+                <ul class="space-y-2 text-xs leading-relaxed" style="color:#9090b8;">
+                  <li class="flex items-start gap-2">
+                    <span style="color:#00ff87;">›</span>
+                    <span data-i18n="exp_networx_b1">Desarrollé scripts en Python y PowerShell para automatizar tareas repetitivas de mantenimiento y diagnóstico de infraestructura (420 horas reglamentarias).</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span style="color:#00ff87;">›</span>
+                    <span data-i18n="exp_networx_b2">Audité y estructuré datos operativos en Microsoft Excel avanzado (tablas dinámicas y fórmulas complejas), mejorando la precisión en reportes gerenciales e inventarios.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Dev Full-Stack Freelance -->
+              <div class="timeline-item">
+                <div class="flex flex-wrap items-center justify-between gap-1 mb-1">
+                  <h4 class="font-semibold text-base" style="color:#eeeeff;" data-i18n="exp_dev_title">Desarrollador Web Full-Stack (Freelance)</h4>
+                  <span class="font-mono text-xs" style="color:#44445a;">Feb 2023 – <span data-i18n="present">Presente</span></span>
+                </div>
+                <p class="text-xs font-mono mb-3" style="color:#7878a0;">Trabajo Independiente</p>
+                <ul class="space-y-2 text-xs leading-relaxed" style="color:#9090b8;">
+                  <li class="flex items-start gap-2">
+                    <span style="color:#00fff0;">›</span>
+                    <span data-i18n="exp_dev_b1">Diseñé y programé aplicaciones web personalizadas con Python, TypeScript, HTML5/CSS3, APIs REST y Git/GitHub, integrando autenticación segura (JWT/OAuth) y bases de datos relacionales.</span>
+                  </li>
+                </ul>
               </div>
 
             </div>
           </div>
 
-          <!-- EXPERIENCIA -->
-          <div class="reveal" style="transition-delay:0.1s;">
-            <h3 class="font-mono text-xs uppercase tracking-widest mb-6" style="color:#44445a;">
-              <span style="color:#00fff0">▸</span> <span data-i18n="exp_section">Experiencia</span>
+          <!-- EDUCACIÓN (Columna Secundaria - 5 cols) -->
+          <div class="lg:col-span-5 reveal" style="transition-delay:0.1s;">
+            <h3 class="font-mono text-xs uppercase tracking-widest mb-8 flex items-center gap-2" style="color:#44445a;">
+              <span style="color:#00ff87">▸</span> <span class="text-white font-semibold" data-i18n="edu_section">Educación Académica</span>
             </h3>
-            <div class="flex flex-col gap-7">
 
+            <div class="flex flex-col gap-8">
+
+              <!-- Universidad -->
               <div class="timeline-item">
-                <p class="font-mono text-xs mb-1" style="color:#44445a;">2026</p>
-                <h4 class="font-semibold mb-1" style="color:#eeeeff;" data-i18n="exp1_title">Pasante de Ingeniería</h4>
-                <p class="text-sm" style="color:#7878a0;">Networx Solutions C.A.</p>
-                <p class="text-xs mt-1 leading-relaxed" style="color:#7878a0;" data-i18n="exp1_desc">Infraestructura de redes, soporte técnico y análisis de sistemas empresariales.</p>
+                <p class="font-mono text-xs mb-1" style="color:#00ff87;">2022 – 2026 (Graduación: Ene 2027)</p>
+                <h4 class="font-semibold text-base mb-1" style="color:#eeeeff;" data-i18n="edu1_title">Licenciatura en Ingeniería Computacional</h4>
+                <p class="text-xs font-mono mb-2" style="color:#00fff0;">Universidad Valle del Momboy (Venezuela)</p>
+                <p class="text-xs leading-relaxed" style="color:#9090b8;" data-i18n="edu1_desc">
+                  100% de créditos académicos aprobados. Proyecto de Grado / Tesis en desarrollo. Cursado completo en la Facultad de Ingeniería. Disponibilidad de tiempo completo.
+                </p>
               </div>
 
+              <!-- CEUPE -->
               <div class="timeline-item">
-                <p class="font-mono text-xs mb-1" style="color:#44445a;">2023 – <span data-i18n="present">Presente</span></p>
-                <h4 class="font-semibold mb-1" style="color:#eeeeff;" data-i18n="exp2_title">Desarrollador Web Freelance</h4>
-                <p class="text-sm" style="color:#7878a0;" data-i18n="exp2_desc">Sistemas POS, gestores de inventario, aplicaciones móviles y herramientas a medida para empresas y proyectos académicos.</p>
+                <p class="font-mono text-xs mb-1" style="color:#00ff87;">Junio 2026</p>
+                <h4 class="font-semibold text-base mb-1" style="color:#eeeeff;" data-i18n="edu2_title">Especialización Profesional en Ciberseguridad</h4>
+                <p class="text-xs font-mono mb-2" style="color:#ff00c8;" data-i18n="edu2_school">European Business School (CEUPE), España · Título propio</p>
+                <p class="text-xs leading-relaxed" style="color:#9090b8;" data-i18n="edu2_desc">
+                  Seguridad de la información, protección de redes, endpoint security, gestión integral de riesgos e implantación de SGSI ISO/IEC 27001.
+                </p>
               </div>
 
+              <!-- Diplomado -->
               <div class="timeline-item">
-                <p class="font-mono text-xs mb-1" style="color:#44445a;">2018 – <span data-i18n="present">Presente</span></p>
-                <h4 class="font-semibold mb-1" style="color:#eeeeff;" data-i18n="exp3_title">Soporte Técnico Informático</h4>
-                <p class="text-sm" style="color:#7878a0;" data-i18n="exp3_desc">Mantenimiento preventivo y correctivo, redes LAN, soporte de hardware y software.</p>
+                <p class="font-mono text-xs mb-1" style="color:#44445a;">2025</p>
+                <h4 class="font-semibold text-base mb-1" style="color:#eeeeff;" data-i18n="edu3_title">Diplomado en Competencias Profesionales</h4>
+                <p class="text-xs font-mono mb-2" style="color:#7878a0;">Universidad Valle del Momboy</p>
+                <p class="text-xs leading-relaxed" style="color:#9090b8;" data-i18n="edu3_desc">
+                  224 horas lectivas cursadas orientadas a metodologías ingenieriles, gestión de proyectos y habilidades directivas.
+                </p>
               </div>
 
             </div>
@@ -596,155 +760,248 @@
       </div>
     </section>
 
-    <!-- ══════════════════════════════ CERTIFICACIONES + STACK ══ -->
+    <!-- ══════════════════════════════ CERTIFICACIONES OFICIALES ══ -->
     <section id="certificaciones" class="py-24" style="border-top:1px solid rgba(0,255,240,0.07);">
       <div class="max-w-6xl mx-auto px-5 sm:px-8">
 
         <div class="reveal mb-14">
           <p class="section-label mb-3"><span style="color:#44445a">$</span> <span data-i18n="certs_cmd">ls ./certifications</span></p>
           <h2 class="text-3xl sm:text-4xl font-bold" style="color:#eeeeff;">
-            <span data-i18n="certs_title">Certificaciones</span>
-            <span class="neon-green"> &amp; <span data-i18n="stack_title">Stack</span></span>
+            <span data-i18n="certs_title">Certificaciones &amp;</span>
+            <span class="neon-green"> <span data-i18n="certs_title2">Acreditaciones</span></span>
           </h2>
+          <p class="text-xs sm:text-sm mt-2" style="color:#7878a0;" data-i18n="certs_subtitle">Acreditaciones auditables con código de verificación (CSV / ID) y respaldo internacional.</p>
         </div>
 
-        <!-- Certifications grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-14 reveal" style="transition-delay:0.05s;">
+        <!-- Certifications grid (6 Certs from CV) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16 reveal" style="transition-delay:0.05s;">
 
-          <!-- Microsoft Azure -->
-          <div class="cert-badge">
-            <div class="icon-box flex-shrink-0" style="background:rgba(0,120,255,0.08);border-color:rgba(0,120,255,0.2);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0078ff" stroke-width="1.8">
-                <path d="M3 15l4-8 4 4 4-6 4 10H3z"/><path d="M3 19h18"/>
+          <!-- ISO 27001 TÜV NORD -->
+          <div class="cert-badge" style="border-left-color:var(--green);">
+            <div class="icon-box flex-shrink-0" style="background:rgba(0,255,135,0.08);border-color:rgba(0,255,135,0.3);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00ff87" stroke-width="1.8">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               </svg>
             </div>
             <div>
-              <p class="font-mono font-semibold text-sm" style="color:#eeeeff;">Microsoft Azure</p>
-              <p class="text-xs mt-0.5" style="color:#7878a0;" data-i18n="cert_az">Fundamentos de nube &amp; servicios</p>
+              <p class="font-mono font-semibold text-sm" style="color:#eeeeff;" data-i18n="c1_title">Auditor Interno ISO/IEC 27001</p>
+              <p class="text-xs mt-0.5" style="color:#00ff87;">ALTER TECHNOLOGY TÜV NORD / CEUPE</p>
+              <p class="text-[11px] mt-1 leading-relaxed" style="color:#7878a0;" data-i18n="c1_desc">SGSI / ISMS · 40h · Cert. N° 26/4429</p>
+              <span class="font-mono text-[10px] block mt-1" style="color:#44445a;">CSV: 71e0e043-7f41-4acf-9a09-5a506f615d5e</span>
             </div>
           </div>
 
-          <!-- Power BI -->
-          <div class="cert-badge" style="border-left-color:rgba(255,190,0,0.5);">
-            <div class="icon-box flex-shrink-0" style="background:rgba(255,190,0,0.07);border-color:rgba(255,190,0,0.2);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffbe00" stroke-width="1.8">
-                <rect x="2" y="9" width="4" height="12"/><rect x="9" y="5" width="4" height="16"/><rect x="16" y="2" width="4" height="19"/>
+          <!-- ISO 22301 TÜV NORD -->
+          <div class="cert-badge" style="border-left-color:rgba(0,255,240,0.8);">
+            <div class="icon-box flex-shrink-0" style="background:rgba(0,255,240,0.08);border-color:rgba(0,255,240,0.3);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00fff0" stroke-width="1.8">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
               </svg>
             </div>
             <div>
-              <p class="font-mono font-semibold text-sm" style="color:#eeeeff;">Microsoft Power BI</p>
-              <p class="text-xs mt-0.5" style="color:#7878a0;" data-i18n="cert_pbi">Modelado y análisis de datos</p>
+              <p class="font-mono font-semibold text-sm" style="color:#eeeeff;" data-i18n="c2_title">Auditor Interno ISO 22301</p>
+              <p class="text-xs mt-0.5" style="color:#00fff0;">ALTER TECHNOLOGY TÜV NORD / CEUPE</p>
+              <p class="text-[11px] mt-1 leading-relaxed" style="color:#7878a0;" data-i18n="c2_desc">SGCN / BCMS (Continuidad del Negocio) · 40h · Cert. N° 26/4430</p>
+              <span class="font-mono text-[10px] block mt-1" style="color:#44445a;">CSV: b03b48f5-38c8-498e-b0cd-8c4e6af47615</span>
             </div>
           </div>
 
-          <!-- Cisco Networking -->
-          <div class="cert-badge" style="border-left-color:rgba(0,255,240,0.5);">
-            <div class="icon-box flex-shrink-0" style="background:rgba(0,255,240,0.07);border-color:rgba(0,255,240,0.2);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00fff0" stroke-width="1.8">
+          <!-- Peritaje e Informática Forense CSI -->
+          <div class="cert-badge" style="border-left-color:rgba(255,0,200,0.8);">
+            <div class="icon-box flex-shrink-0" style="background:rgba(255,0,200,0.08);border-color:rgba(255,0,200,0.3);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff00c8" stroke-width="1.8">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><circle cx="11" cy="11" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-mono font-semibold text-sm" style="color:#eeeeff;" data-i18n="c3_title">Peritaje e Informática Forense (CSI)</p>
+              <p class="text-xs mt-0.5" style="color:#ff00c8;">Academia Hacker Mentor</p>
+              <p class="text-[11px] mt-1 leading-relaxed" style="color:#7878a0;" data-i18n="c3_desc">Cadena de custodia, análisis de evidencias digitales y peritaje</p>
+              <span class="font-mono text-[10px] block mt-1" style="color:#44445a;">ID: 1047ea61-f734-4d53-a417-ca0b90a5639d</span>
+            </div>
+          </div>
+
+          <!-- Cisco Networking Academy -->
+          <div class="cert-badge" style="border-left-color:rgba(0,180,255,0.8);">
+            <div class="icon-box flex-shrink-0" style="background:rgba(0,180,255,0.08);border-color:rgba(0,180,255,0.3);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00b4ff" stroke-width="1.8">
                 <circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
               </svg>
             </div>
             <div>
               <p class="font-mono font-semibold text-sm" style="color:#eeeeff;">Cisco Networking Academy</p>
-              <p class="text-xs mt-0.5" style="color:#7878a0;" data-i18n="cert_cisco">Ciberseguridad y redes</p>
+              <p class="text-xs mt-0.5" style="color:#00b4ff;">Cisco System Credential</p>
+              <p class="text-[11px] mt-1 leading-relaxed" style="color:#7878a0;" data-i18n="c4_desc">Endpoint Security · Dispositivos &amp; Configuración Inicial · Conceptos de Redes · Ciberseguridad</p>
             </div>
           </div>
 
-          <!-- Green Chemistry -->
-          <div class="cert-badge" style="border-left-color:rgba(0,200,80,0.5);">
-            <div class="icon-box flex-shrink-0" style="background:rgba(0,200,80,0.07);border-color:rgba(0,200,80,0.2);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00c850" stroke-width="1.8">
+          <!-- Microsoft Learn Cloud & Data -->
+          <div class="cert-badge" style="border-left-color:rgba(255,190,0,0.8);">
+            <div class="icon-box flex-shrink-0" style="background:rgba(255,190,0,0.08);border-color:rgba(255,190,0,0.3);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffbe00" stroke-width="1.8">
+                <path d="M3 15l4-8 4 4 4-6 4 10H3z"/><rect x="14" y="10" width="3" height="8"/><rect x="19" y="6" width="3" height="12"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-mono font-semibold text-sm" style="color:#eeeeff;">Microsoft Learn: Cloud &amp; BI</p>
+              <p class="text-xs mt-0.5" style="color:#ffbe00;">Microsoft Official Path</p>
+              <p class="text-[11px] mt-1 leading-relaxed" style="color:#7878a0;" data-i18n="c5_desc">Nube Azure (AZ-900 path) · Modelado y Preparación de Datos con Power BI &amp; DAX</p>
+            </div>
+          </div>
+
+          <!-- Green Chemistry UNITAR / ONU -->
+          <div class="cert-badge" style="border-left-color:rgba(0,200,80,0.8);">
+            <div class="icon-box flex-shrink-0" style="background:rgba(0,200,80,0.08);border-color:rgba(0,200,80,0.3);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00c850" stroke-width="1.8">
                 <path d="M12 2a10 10 0 0 0 0 20"/><path d="M12 2C6.48 2 2 6.48 2 12"/><path d="M2 12c0 5.52 4.48 10 10 10"/><circle cx="12" cy="12" r="3"/>
               </svg>
             </div>
             <div>
               <p class="font-mono font-semibold text-sm" style="color:#eeeeff;">Green Chemistry — UNITAR</p>
-              <p class="text-xs mt-0.5" style="color:#7878a0;" data-i18n="cert_gc">Química verde sostenible</p>
-            </div>
-          </div>
-
-          <!-- ISO 27001 -->
-          <div class="cert-badge" style="border-left-color:rgba(157,0,255,0.5);">
-            <div class="icon-box flex-shrink-0" style="background:rgba(157,0,255,0.07);border-color:rgba(157,0,255,0.2);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9d00ff" stroke-width="1.8">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-            </div>
-            <div>
-              <p class="font-mono font-semibold text-sm" style="color:#eeeeff;">ISO/IEC 27001</p>
-              <p class="text-xs mt-0.5" style="color:#9d00ff;" data-i18n="cert_iso">Auditor Interno — en proceso</p>
+              <p class="text-xs mt-0.5" style="color:#00c850;">Naciones Unidas (ONU)</p>
+              <p class="text-[11px] mt-1 leading-relaxed" style="color:#7878a0;" data-i18n="c6_desc">Green and Sustainable Chemistry · Buenas prácticas y sostenibilidad tecnológica</p>
             </div>
           </div>
 
         </div>
 
-        <!-- Languages spoken -->
-        <div class="reveal mb-14" style="transition-delay:0.1s;">
-          <h3 class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#44445a;">
-            <span style="color:#00ff87">▸</span> <span data-i18n="lang_title">Idiomas</span>
+        <!-- Languages spoken with CV Credentials -->
+        <div class="reveal" style="transition-delay:0.1s;">
+          <h3 class="font-mono text-xs uppercase tracking-widest mb-4 flex items-center gap-2" style="color:#44445a;">
+            <span style="color:#00ff87">▸</span> <span class="text-white font-semibold" data-i18n="lang_title">Dominio Lingüístico</span>
           </h3>
-          <div class="flex flex-wrap gap-3">
-            <div class="lang-badge">
-              <span style="color:#eeeeff;">Español</span>
-              <span class="ml-2 font-mono text-xs neon-green">Nativo</span>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="lang-badge flex items-center justify-between">
+              <div>
+                <p class="text-sm font-semibold" style="color:#eeeeff;">Español</p>
+                <p class="text-xs font-mono" style="color:#7878a0;" data-i18n="lang_es_sub">Lengua Materna</p>
+              </div>
+              <span class="font-mono text-xs neon-green px-2 py-0.5 rounded" style="background:rgba(0,255,135,0.08);">Nativo</span>
             </div>
-            <div class="lang-badge">
-              <span style="color:#eeeeff;">English</span>
-              <span class="ml-2 font-mono text-xs neon-cyan">B1</span>
+            <div class="lang-badge flex items-center justify-between">
+              <div>
+                <p class="text-sm font-semibold" style="color:#eeeeff;">English</p>
+                <p class="text-xs font-mono" style="color:#7878a0;" data-i18n="lang_en_sub">Cert. Dexway 78% · B2 Técnico</p>
+              </div>
+              <span class="font-mono text-xs neon-cyan px-2 py-0.5 rounded" style="background:rgba(0,255,240,0.08);">B1 / B2</span>
             </div>
-            <div class="lang-badge">
-              <span style="color:#eeeeff;">Deutsch</span>
-              <span class="ml-2 font-mono text-xs" style="color:#ff00c8;">A1</span>
+            <div class="lang-badge flex items-center justify-between">
+              <div>
+                <p class="text-sm font-semibold" style="color:#eeeeff;">Deutsch</p>
+                <p class="text-xs font-mono" style="color:#7878a0;" data-i18n="lang_de_sub">Cert. Busuu 94%</p>
+              </div>
+              <span class="font-mono text-xs neon-mag px-2 py-0.5 rounded" style="background:rgba(255,0,200,0.08);">A1</span>
             </div>
           </div>
         </div>
 
-        <!-- Stack grid -->
-        <div id="stack" class="reveal pt-14" style="transition-delay:0.15s;">
-          <h3 class="font-mono text-xs uppercase tracking-widest mb-6" style="color:#44445a;">
-            <span style="color:#00fff0">▸</span> <span data-i18n="stack_label">Stack Tecnológico</span>
-          </h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      </div>
+    </section>
 
-            <div class="stack-card">
-              <h4 class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#44445a;" data-i18n="stack_env">Entorno</h4>
-              <div class="flex flex-wrap gap-2">
-                <span class="tag">MX Linux</span>
-                <span class="tag">Terminal</span>
-                <span class="tag">Git</span>
-              </div>
+    <!-- ══════════════════════════════ STACK TECNOLÓGICO ══ -->
+    <section id="stack" class="py-24" style="border-top:1px solid rgba(0,255,240,0.07);">
+      <div class="max-w-6xl mx-auto px-5 sm:px-8">
+
+        <div class="reveal mb-14">
+          <p class="section-label mb-3"><span style="color:#44445a">$</span> <span data-i18n="stack_cmd">cat skills.yaml</span></p>
+          <h2 class="text-3xl sm:text-4xl font-bold" style="color:#eeeeff;">
+            <span data-i18n="stack_title">Habilidades Técnicas &amp;</span>
+            <span class="neon-cyan"> <span data-i18n="stack_title2">Herramientas</span></span>
+          </h2>
+          <p class="text-xs sm:text-sm mt-2" style="color:#7878a0;" data-i18n="stack_subtitle">Competencias organizadas por dominios operativos según el CV oficial.</p>
+        </div>
+
+        <!-- 5 Category Cards directly from CV -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 reveal" style="transition-delay:0.05s;">
+
+          <!-- 1. Soporte & Help Desk -->
+          <div class="stack-card">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="w-2 h-2 rounded-full" style="background:var(--green);"></span>
+              <h4 class="font-mono text-xs uppercase tracking-widest text-white font-semibold" data-i18n="cat_support">Soporte &amp; Help Desk</h4>
             </div>
-
-            <div class="stack-card">
-              <h4 class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#44445a;" data-i18n="stack_front">Frontend</h4>
-              <div class="flex flex-wrap gap-2">
-                <span class="tag">TailwindCSS</span>
-                <span class="tag">React Native</span>
-                <span class="tag">HTML5</span>
-              </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag">Soporte L1/L2</span>
+              <span class="tag">Troubleshooting</span>
+              <span class="tag">Gestión de Incidentes</span>
+              <span class="tag">Documentación Técnica</span>
+              <span class="tag">AnyDesk / TeamViewer / RDP</span>
+              <span class="tag">Fundamentos ITIL</span>
             </div>
-
-            <div class="stack-card">
-              <h4 class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#44445a;" data-i18n="stack_back">Backend &amp; DB</h4>
-              <div class="flex flex-wrap gap-2">
-                <span class="tag">Supabase</span>
-                <span class="tag">Python</span>
-                <span class="tag">SQL</span>
-              </div>
-            </div>
-
-            <div class="stack-card sm:col-span-2 lg:col-span-3">
-              <h4 class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#44445a;" data-i18n="stack_sec">Seguridad &amp; Análisis</h4>
-              <div class="flex flex-wrap gap-2">
-                <span class="tag">Informática Forense</span>
-                <span class="tag">Ciberseguridad</span>
-                <span class="tag">Redes TCP/IP</span>
-                <span class="tag">ISO 27001</span>
-                <span class="tag">OSINT</span>
-              </div>
-            </div>
-
           </div>
+
+          <!-- 2. Sistemas & Infraestructura -->
+          <div class="stack-card">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="w-2 h-2 rounded-full" style="background:var(--cyan);"></span>
+              <h4 class="font-mono text-xs uppercase tracking-widest text-white font-semibold" data-i18n="cat_sys">Sistemas &amp; Infraestructura</h4>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag">Windows 10/11/Server</span>
+              <span class="tag">Linux (Ubuntu/Debian)</span>
+              <span class="tag">Active Directory / Entra ID</span>
+              <span class="tag">Group Policy (GPO)</span>
+              <span class="tag">PowerShell &amp; Bash</span>
+              <span class="tag">VirtualBox / VMware</span>
+              <span class="tag">Backups &amp; Recuperación</span>
+            </div>
+          </div>
+
+          <!-- 3. Redes & Conectividad -->
+          <div class="stack-card">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="w-2 h-2 rounded-full" style="background:#ffbe00;"></span>
+              <h4 class="font-mono text-xs uppercase tracking-widest text-white font-semibold" data-i18n="cat_net">Redes &amp; Conectividad</h4>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag">Redes Cisco (Routing/Switching)</span>
+              <span class="tag">TCP/IP</span>
+              <span class="tag">VLAN</span>
+              <span class="tag">DHCP &amp; DNS</span>
+              <span class="tag">VPN</span>
+              <span class="tag">Wireshark</span>
+              <span class="tag">Packet Tracer</span>
+            </div>
+          </div>
+
+          <!-- 4. Ciberseguridad & GRC -->
+          <div class="stack-card md:col-span-2 lg:col-span-1">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="w-2 h-2 rounded-full" style="background:var(--magenta);"></span>
+              <h4 class="font-mono text-xs uppercase tracking-widest text-white font-semibold" data-i18n="cat_sec">Ciberseguridad &amp; GRC</h4>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag">ISO/IEC 27001 (SGSI)</span>
+              <span class="tag">ISO 22301 (SGCN)</span>
+              <span class="tag">Hardening de SO</span>
+              <span class="tag">Control de Acceso (RBAC)</span>
+              <span class="tag">Row Level Security (RLS)</span>
+              <span class="tag">Endpoint Security</span>
+              <span class="tag">Forense Digital (CSI)</span>
+            </div>
+          </div>
+
+          <!-- 5. Desarrollo, Datos & Cloud (Doble Ancho) -->
+          <div class="stack-card md:col-span-2 lg:col-span-2">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="w-2 h-2 rounded-full" style="background:var(--green);"></span>
+              <h4 class="font-mono text-xs uppercase tracking-widest text-white font-semibold" data-i18n="cat_dev">Desarrollo, Datos &amp; Cloud</h4>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag">Python</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">SQL (PostgreSQL, MySQL)</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">Git &amp; GitHub</span>
+              <span class="tag">Microsoft Azure Cloud</span>
+              <span class="tag">Power BI &amp; DAX</span>
+              <span class="tag">Excel Avanzado</span>
+              <span class="tag">TailwindCSS</span>
+              <span class="tag">HTML5 / CSS3</span>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -768,31 +1025,43 @@
       </div>
 
       <!-- Goodbye text -->
-      <p class="mb-3 leading-relaxed" style="color:#7878a0; font-size:0.9rem;" data-i18n="footer_text">
-        ¿Tienes un proyecto en mente o quieres hablar sobre tecnología?<br/>
-        Estoy disponible para colaboraciones, freelance y nuevas oportunidades.
+      <p class="mb-3 leading-relaxed" style="color:#eeeeff; font-size:1.05rem;" data-i18n="footer_title">
+        ¿Requieres soporte en infraestructura, consultoría GRC o desarrollo a medida?
       </p>
-      <p class="font-mono text-xs mb-10" style="color:#44445a;" data-i18n="footer_sub">
-        // response time &lt; 24h
+      <p class="mb-8 leading-relaxed text-sm" style="color:#7878a0;" data-i18n="footer_text">
+        Estoy disponible para posiciones corporativas, auditorías de seguridad, proyectos freelance y alianzas tecnológicas.
       </p>
 
+      <!-- Direct Contact Points -->
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-8 text-xs font-mono">
+        <a href="mailto:Enmanuel.cardoza@hotmail.com" class="px-3 py-1.5 rounded transition-colors" style="background:#0c0c18;border:1px solid #1a1a2e;color:#00ff87;">
+          Enmanuel.cardoza@hotmail.com
+        </a>
+        <a href="tel:+584262403275" class="px-3 py-1.5 rounded transition-colors" style="background:#0c0c18;border:1px solid #1a1a2e;color:#00fff0;">
+          +58 426 240 3275
+        </a>
+        <a href="https://enmanuel.tech" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded transition-colors" style="background:#0c0c18;border:1px solid #1a1a2e;color:#ff00c8;">
+          www.enmanuel.tech
+        </a>
+      </div>
+
       <!-- Single contact CTA -->
-      <a href="mailto:contact@enmanuel.tech" class="btn-contact">
+      <a href="mailto:Enmanuel.cardoza@hotmail.com" class="btn-contact mb-10">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
           <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
           <polyline points="22,6 12,13 2,6"/>
         </svg>
-        <span data-i18n="footer_btn">Enviar mensaje</span>
+        <span data-i18n="footer_btn">Iniciar Contacto Directo</span>
       </a>
 
-      <div class="divider mt-12 mb-6"></div>
+      <div class="divider mt-6 mb-6"></div>
 
       <!-- Bottom bar -->
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs font-mono" style="color:#44445a;">
-        <span>© 2026 José Enmanuel Cardoza</span>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono" style="color:#44445a;">
+        <span>© 2026 José Enmanuel Cardoza Ferrer</span>
         <div class="flex items-center gap-2">
           <span class="w-1.5 h-1.5 rounded-full animate-pulse-slow" style="background:#00ff87;box-shadow:0 0 6px #00ff87;"></span>
-          <span data-i18n="footer_avail">disponible para proyectos</span>
+          <span data-i18n="footer_avail">Trujillo, Venezuela · Disponible Globalmente</span>
         </div>
       </div>
 
@@ -807,68 +1076,136 @@
     es: {
       nav_bio: 'bio', nav_exp: 'experiencia', nav_certs: 'certificaciones', nav_stack: 'stack',
       bio_cmd: 'cat profile.txt',
-      bio_text: 'Próximo a titularme en <span style="color:#eeeeff;">Ingeniería Computacional</span>. Mi experiencia combina el <span class="neon-cyan">soporte corporativo</span> en infraestructuras de telecomunicaciones con el <span class="neon-green">desarrollo web freelance</span> de sistemas POS y gestores a medida. Me destaco por mi enfoque analítico para resolver problemas complejos y optimizar procesos mediante tecnología.',
-      bio_cta1: 'Descargar CV_', bio_cta2: 'Contactar',
+      bio_status: 'Sistemas & Ciberseguridad',
+      bio_role: 'Especialista en Infraestructura TI · Soporte L1/L2 · Ciberseguridad (GRC/SGSI)',
+      bio_text: 'Especialista en Infraestructura de TI, Soporte Técnico L1/L2 y Ciberseguridad (GRC / SGSI) con más de 6 años de experiencia en administración de sistemas Windows/Linux, redes Cisco y soluciones cloud en Microsoft Azure. Creador de <span class="neon-cyan">SisvenPOS</span>, plataforma operativa en producción comercial con arquitectura segura, controles RBAC y Row Level Security (RLS) en Supabase. Auditor Interno certificado ISO/IEC 27001 e ISO 22301 por TÜV NORD. Orientado al soporte presencial y remoto, resolución rápida de incidencias (Troubleshooting), automatización con Python/PowerShell y Hardening de sistemas operativos.',
+      bio_loc: 'Trujillo, Venezuela',
+      bio_availability: 'Disponibilidad Inmediata · Remoto / Presencial',
+      bio_cta1: 'Descargar CV_ (PDF)', bio_cta2: 'Contactar',
+      stat_exp: 'Infraestructura TI & Soporte',
+      stat_sisven: 'SisvenPOS activo en producción',
+      stat_support: 'Clientes L1/L2 atendidos',
+      stat_iso: 'Auditor TÜV NORD (27001/22301)',
       edu_cmd: 'cat curriculum.json',
-      edu_title: 'Educación &amp;', edu_title2: 'Experiencia',
-      edu_section: 'Educación', exp_section: 'Experiencia',
-      edu1_title: 'Ingeniería Computacional', edu1_status: 'Próximo a titularme · 2026',
-      edu2_title: 'Ciberseguridad', edu2_status: 'Completado · 2025',
-      exp1_title: 'Pasante de Ingeniería',
-      exp1_desc: 'Infraestructura de redes, soporte técnico y análisis de sistemas empresariales.',
-      exp2_title: 'Desarrollador Web Freelance',
-      exp2_desc: 'Sistemas POS, gestores de inventario, aplicaciones móviles y herramientas a medida para empresas y proyectos académicos.',
-      exp3_title: 'Soporte Técnico Informático',
-      exp3_desc: 'Mantenimiento preventivo y correctivo, redes LAN, soporte de hardware y software.',
+      exp_title: 'Experiencia Profesional &', edu_title: 'Educación',
+      exp_section: 'Trayectoria Laboral', edu_section: 'Educación Académica',
       present: 'Presente',
+      exp_sisven_title: 'Fundador y Desarrollador Principal — SisvenPOS',
+      exp_sisven_b1: 'Diseñé, desarrollé y desplegué SisvenPOS, un sistema POS con gestión de inventario y facturación operando activamente en 9 comercios locales.',
+      exp_sisven_b2: 'Implementé controles de acceso basados en roles (RBAC) y políticas RLS (Row Level Security) en Supabase, aislando datos comerciales por tienda y previniendo accesos no autorizados.',
+      exp_sisven_b3: 'Optimicé consultas e índices en PostgreSQL/Supabase, reduciendo el tiempo de respuesta transaccional en la generación de reportes e inventarios.',
+      exp_sisven_b4: 'Capacité presencialmente a propietarios y cajeros en la operación del punto de venta y gestión de caja, logrando autonomía operativa desde el primer día.',
+      exp_soporte_title: 'Técnico de Soporte e Infraestructura IT (Autónomo)',
+      exp_soporte_b1: 'Resolví incidencias L1/L2 de hardware, software y red para más de 200 clientes particulares y comerciales mediante soporte presencial y remoto (AnyDesk, TeamViewer, RDP).',
+      exp_soporte_b2: 'Instalé y aseguré sistemas Windows (Desktop/Server) y Linux (Ubuntu/Debian) mediante hardening, cuentas de mínimo privilegio, políticas GPO y respaldos periódicos de datos.',
+      exp_soporte_b3: 'Configuré dispositivos de red Cisco (switches/routers), topologías LAN/WLAN y servicios esenciales (TCP/IP, DHCP, DNS, VPN), asegurando alta disponibilidad de conectividad.',
+      exp_networx_title: 'Asistente Técnico de TI y Soporte Operativo',
+      exp_networx_b1: 'Desarrollé scripts en Python y PowerShell para automatizar tareas repetitivas de mantenimiento y diagnóstico de infraestructura (420 horas reglamentarias).',
+      exp_networx_b2: 'Audité y estructuré datos operativos en Microsoft Excel avanzado (tablas dinámicas y fórmulas complejas), mejorando la precisión en reportes gerenciales e inventarios.',
+      exp_dev_title: 'Desarrollador Web Full-Stack (Freelance)',
+      exp_dev_b1: 'Diseñé y programé aplicaciones web personalizadas con Python, TypeScript, HTML5/CSS3, APIs REST y Git/GitHub, integrando autenticación segura (JWT/OAuth) y bases de datos relacionales.',
+      edu1_title: 'Licenciatura en Ingeniería Computacional',
+      edu1_desc: '100% de créditos académicos aprobados. Proyecto de Grado / Tesis en desarrollo. Cursado completo en la Facultad de Ingeniería. Disponibilidad de tiempo completo.',
+      edu2_title: 'Especialización Profesional en Ciberseguridad',
+      edu2_school: 'European Business School (CEUPE), España · Título propio',
+      edu2_desc: 'Seguridad de la información, protección de redes, endpoint security, gestión integral de riesgos e implantación de SGSI ISO/IEC 27001.',
+      edu3_title: 'Diplomado en Competencias Profesionales',
+      edu3_desc: '224 horas lectivas cursadas orientadas a metodologías ingenieriles, gestión de proyectos y habilidades directivas.',
       certs_cmd: 'ls ./certifications',
-      certs_title: 'Certificaciones', stack_title: 'Stack',
-      cert_az: 'Fundamentos de nube &amp; servicios',
-      cert_pbi: 'Modelado y análisis de datos',
-      cert_cisco: 'Ciberseguridad y redes',
-      cert_gc: 'Química verde sostenible',
-      cert_iso: 'Auditor Interno — en proceso',
-      lang_title: 'Idiomas',
-      stack_label: 'Stack Tecnológico',
-      stack_env: 'Entorno', stack_front: 'Frontend',
-      stack_back: 'Backend &amp; DB', stack_sec: 'Seguridad &amp; Análisis',
-      footer_text: '¿Tienes un proyecto en mente o quieres hablar sobre tecnología?<br/>Estoy disponible para colaboraciones, freelance y nuevas oportunidades.',
-      footer_sub: '// response time &lt; 24h',
-      footer_btn: 'Enviar mensaje',
-      footer_avail: 'disponible para proyectos',
+      certs_title: 'Certificaciones &', certs_title2: 'Acreditaciones',
+      certs_subtitle: 'Acreditaciones auditables con código de verificación (CSV / ID) y respaldo internacional.',
+      c1_title: 'Auditor Interno ISO/IEC 27001',
+      c1_desc: 'SGSI / ISMS · 40h · Cert. N° 26/4429',
+      c2_title: 'Auditor Interno ISO 22301',
+      c2_desc: 'SGCN / BCMS (Continuidad del Negocio) · 40h · Cert. N° 26/4430',
+      c3_title: 'Peritaje e Informática Forense (CSI)',
+      c3_desc: 'Cadena de custodia, análisis de evidencias digitales y peritaje',
+      c4_desc: 'Endpoint Security · Dispositivos & Configuración Inicial · Conceptos de Redes · Ciberseguridad',
+      c5_desc: 'Nube Azure (AZ-900 path) · Modelado y Preparación de Datos con Power BI & DAX',
+      c6_desc: 'Green and Sustainable Chemistry · Buenas prácticas y sostenibilidad tecnológica',
+      lang_title: 'Dominio Lingüístico',
+      lang_es_sub: 'Lengua Materna',
+      lang_en_sub: 'Cert. Dexway 78% · B2 Técnico',
+      lang_de_sub: 'Cert. Busuu 94%',
+      stack_cmd: 'cat skills.yaml',
+      stack_title: 'Habilidades Técnicas &', stack_title2: 'Herramientas',
+      stack_subtitle: 'Competencias organizadas por dominios operativos según el CV oficial.',
+      cat_support: 'Soporte & Help Desk',
+      cat_sys: 'Sistemas & Infraestructura',
+      cat_net: 'Redes & Conectividad',
+      cat_sec: 'Ciberseguridad & GRC',
+      cat_dev: 'Desarrollo, Datos & Cloud',
+      footer_title: '¿Requieres soporte en infraestructura, consultoría GRC o desarrollo a medida?',
+      footer_text: 'Estoy disponible para posiciones corporativas, auditorías de seguridad, proyectos freelance y alianzas tecnológicas.',
+      footer_btn: 'Iniciar Contacto Directo',
+      footer_avail: 'Trujillo, Venezuela · Disponible Globalmente',
     },
     en: {
       nav_bio: 'bio', nav_exp: 'experience', nav_certs: 'certifications', nav_stack: 'stack',
       bio_cmd: 'cat profile.txt',
-      bio_text: 'Soon to graduate in <span style="color:#eeeeff;">Computer Engineering</span>. My experience combines <span class="neon-cyan">corporate support</span> in telecommunications infrastructure with <span class="neon-green">freelance web development</span> of POS systems and custom managers. I stand out for my analytical approach to solving complex problems and optimizing processes through technology.',
-      bio_cta1: 'Download CV_', bio_cta2: 'Contact',
+      bio_status: 'Systems & Cybersecurity',
+      bio_role: 'IT Infrastructure Specialist · L1/L2 Support · Cybersecurity (GRC/ISMS)',
+      bio_text: 'IT Infrastructure, L1/L2 Technical Support, and Cybersecurity (GRC / ISMS) Specialist with 6+ years of experience administering Windows/Linux systems, Cisco networks, and Microsoft Azure cloud solutions. Creator of <span class="neon-cyan">SisvenPOS</span>, a commercial point-of-sale platform operating in production with secure architecture, RBAC controls, and Row Level Security (RLS) on Supabase. TÜV NORD certified Internal Auditor for ISO/IEC 27001 & ISO 22301. Dedicated to on-site and remote troubleshooting, Python/PowerShell automation, and operating system hardening.',
+      bio_loc: 'Trujillo, Venezuela',
+      bio_availability: 'Immediate Availability · Remote / On-Site',
+      bio_cta1: 'Download CV_ (PDF)', bio_cta2: 'Contact',
+      stat_exp: 'IT Infrastructure & Support',
+      stat_sisven: 'SisvenPOS active in production',
+      stat_support: 'L1/L2 Clients Resolved',
+      stat_iso: 'TÜV NORD Auditor (27001/22301)',
       edu_cmd: 'cat curriculum.json',
-      edu_title: 'Education &amp;', edu_title2: 'Experience',
-      edu_section: 'Education', exp_section: 'Experience',
-      edu1_title: 'Computer Engineering', edu1_status: 'Graduating · 2026',
-      edu2_title: 'Cybersecurity', edu2_status: 'Completed · 2025',
-      exp1_title: 'Engineering Intern',
-      exp1_desc: 'Network infrastructure, technical support and enterprise systems analysis.',
-      exp2_title: 'Freelance Web Developer',
-      exp2_desc: 'POS systems, inventory managers, mobile apps and custom tools for businesses and academic projects.',
-      exp3_title: 'IT Technical Support',
-      exp3_desc: 'Preventive and corrective maintenance, LAN networks, hardware and software support.',
+      exp_title: 'Professional Experience &', edu_title: 'Education',
+      exp_section: 'Career History', edu_section: 'Academic Education',
       present: 'Present',
+      exp_sisven_title: 'Founder & Lead Developer — SisvenPOS',
+      exp_sisven_b1: 'Designed, built, and deployed SisvenPOS, a cloud POS system with inventory and billing actively operating across 9 local businesses.',
+      exp_sisven_b2: 'Implemented role-based access control (RBAC) and Row Level Security (RLS) policies on Supabase, isolating store records and preventing unauthorized access.',
+      exp_sisven_b3: 'Optimized PostgreSQL/Supabase queries and indexes, cutting response times for transactional inventory and executive sales reports.',
+      exp_sisven_b4: 'Conducted in-person training for business owners and cashiers on checkout workflows and cash management, ensuring operational autonomy from day one.',
+      exp_soporte_title: 'IT Support & Infrastructure Specialist (Autonomous)',
+      exp_soporte_b1: 'Resolved L1/L2 hardware, software, and network incidents for 200+ private and business clients through on-site and remote support (AnyDesk, TeamViewer, RDP).',
+      exp_soporte_b2: 'Deployed and hardened Windows (Desktop/Server) and Linux (Ubuntu/Debian) systems using least-privilege policies, GPOs, and scheduled data backups.',
+      exp_soporte_b3: 'Configured Cisco networking devices (switches/routers), LAN/WLAN topologies, and core services (TCP/IP, DHCP, DNS, VPN), securing high connectivity uptime.',
+      exp_networx_title: 'IT Technical & Operations Support Assistant',
+      exp_networx_b1: 'Built Python and PowerShell scripts to automate repetitive infrastructure diagnostics and maintenance routines (420 statutory hours).',
+      exp_networx_b2: 'Audited and structured operational data using advanced Microsoft Excel (pivot tables, complex formulas), increasing accuracy in management inventory reports.',
+      exp_dev_title: 'Full-Stack Web Developer (Freelance)',
+      exp_dev_b1: 'Architected and programmed custom web solutions with Python, TypeScript, HTML5/CSS3, REST APIs, and Git/GitHub, integrating secure auth (JWT/OAuth) and SQL databases.',
+      edu1_title: 'Bachelor of Science in Computer Engineering',
+      edu1_desc: '100% of academic credits completed. Undergraduate thesis actively in development. Full curriculum completed at the Faculty of Engineering. Full-time availability.',
+      edu2_title: 'Professional Specialization in Cybersecurity',
+      edu2_school: 'European Business School (CEUPE), Spain · University-specific degree',
+      edu2_desc: 'Information security, perimeter network defense, endpoint security, enterprise risk management, and ISO/IEC 27001 ISMS implementation.',
+      edu3_title: 'Diploma in Professional Engineering Competencies',
+      edu3_desc: '224 academic lecture hours focused on engineering methodologies, project management, and executive technical leadership.',
       certs_cmd: 'ls ./certifications',
-      certs_title: 'Certifications', stack_title: 'Stack',
-      cert_az: 'Cloud fundamentals &amp; services',
-      cert_pbi: 'Data modeling and analysis',
-      cert_cisco: 'Cybersecurity and networking',
-      cert_gc: 'Sustainable green chemistry',
-      cert_iso: 'Internal Auditor — in progress',
-      lang_title: 'Languages',
-      stack_label: 'Tech Stack',
-      stack_env: 'Environment', stack_front: 'Frontend',
-      stack_back: 'Backend &amp; DB', stack_sec: 'Security &amp; Analysis',
-      footer_text: 'Have a project in mind or want to talk tech?<br/>I\'m open to collaborations, freelance work and new opportunities.',
-      footer_sub: '// response time &lt; 24h',
-      footer_btn: 'Send a message',
-      footer_avail: 'available for projects',
+      certs_title: 'Certifications &', certs_title2: 'Accreditations',
+      certs_subtitle: 'Auditable credentials backed by international bodies with verification codes (CSV / ID).',
+      c1_title: 'ISO/IEC 27001 Internal Auditor',
+      c1_desc: 'ISMS / SGSI · 40h · Cert. N° 26/4429',
+      c2_title: 'ISO 22301 Internal Auditor',
+      c2_desc: 'BCMS / SGCN (Business Continuity) · 40h · Cert. N° 26/4430',
+      c3_title: 'Computer Forensics & Incident Investigation (CSI)',
+      c3_desc: 'Chain of custody, digital forensic analysis, and expert technical testimony',
+      c4_desc: 'Endpoint Security · Networking Devices & Initial Config · Network Basics · Cybersecurity',
+      c5_desc: 'Azure Cloud Fundamentals (AZ-900) · Data Modeling and Preparation with Power BI & DAX',
+      c6_desc: 'Green and Sustainable Chemistry · Best environmental and technological practices',
+      lang_title: 'Language Proficiency',
+      lang_es_sub: 'Native Tongue',
+      lang_en_sub: 'Dexway Cert. 78% · Technical B2',
+      lang_de_sub: 'Busuu Cert. 94%',
+      stack_cmd: 'cat skills.yaml',
+      stack_title: 'Technical Skills &', stack_title2: 'Tools',
+      stack_subtitle: 'Core competencies classified into operational domains according to official CV.',
+      cat_support: 'Support & Help Desk',
+      cat_sys: 'Systems & Infrastructure',
+      cat_net: 'Networks & Connectivity',
+      cat_sec: 'Cybersecurity & GRC',
+      cat_dev: 'Development, Data & Cloud',
+      footer_title: 'Need infrastructure support, GRC consulting, or custom software?',
+      footer_text: 'Open to corporate engineering roles, security auditing, freelance contracts, and technology partnerships.',
+      footer_btn: 'Initiate Direct Contact',
+      footer_avail: 'Trujillo, Venezuela · Available Globally',
     }
   };
 
@@ -920,7 +1257,7 @@
     entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }
     });
-  }, { threshold: 0.09 });
+  }, { threshold: 0.08 });
   document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
   /* ════════════════════ Active nav ════════════════════ */
@@ -938,13 +1275,15 @@
   /* ════════════════════ Canvas particles ════════════════════ */
   (function () {
     const canvas = document.getElementById('particles');
+    if (!canvas) return;
     const ctx = canvas.getContext('2d');
     const COLORS = ['#00ff87','#00fff0','#ff00c8','#9d00ff'];
-    const N = 65;
+    const N = 70;
     let W, H, pts = [];
 
     function resize() {
       const bio = document.getElementById('bio');
+      if (!bio) return;
       W = canvas.width  = bio.offsetWidth;
       H = canvas.height = bio.offsetHeight;
     }
